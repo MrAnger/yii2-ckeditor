@@ -17,9 +17,8 @@
     "issues": "https://github.com/MrAnger/yii2-ckeditor/issues",
     "source": "https://github.com/MrAnger/yii2-ckeditor"
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
-    "yiisoft/yii2": ">=2.0.0",
-    "ckeditor/ckeditor": "@dev-full/latest"
+    "ckeditor/ckeditor": "dev-full/latest"
   }
 }
