@@ -26,6 +26,6 @@
   "minimum-stability": "stable",
   "require": {
     "yiisoft/yii2": "*",
-    "bower-asset/ckeditor" : "full/4.*"
+    "bower-asset/ckeditor" : "4.*"
   }
 }
