@@ -20,6 +20,6 @@
   "minimum-stability": "stable",
   "require": {
     "yiisoft/yii2": ">=2.0.0",
-    "ckeditor/ckeditor": "full/stable"
+    "ckeditor/ckeditor": "dev-full/latest"
   }
 }
