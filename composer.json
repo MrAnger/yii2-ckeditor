@@ -25,9 +25,7 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "yiisoft/yii2": "*"
-  },
-  "require-dev": {
-    "ckeditor/ckeditor": "dev-full/stable"
+    "yiisoft/yii2": "*",
+    "bower-asset/ckeditor" : "full/4.*"
   }
 }
