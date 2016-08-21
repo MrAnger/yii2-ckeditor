@@ -24,6 +24,9 @@
     }
   },
   "minimum-stability": "stable",
+  "require": {
+    "yiisoft/yii2": "*"
+  },
   "require-dev": {
     "ckeditor/ckeditor": "dev-full/stable"
   }
