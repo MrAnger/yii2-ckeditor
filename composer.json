@@ -1,6 +1,7 @@
 {
   "name": "mranger/yii2-ckeditor",
   "description": "CKEditor Yii2 widget working via official ckeditor composer package and using custom presets.",
+  "type": "yii2-extension",
   "keywords": [
     "CKEditor",
     "wysiwyg",
@@ -17,8 +18,14 @@
     "issues": "https://github.com/MrAnger/yii2-ckeditor/issues",
     "source": "https://github.com/MrAnger/yii2-ckeditor"
   },
-  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "mranger\\ckeditor\\": ""
+    }
+  },
+  "minimum-stability": "stable",
   "require": {
+    "yiisoft/yii2": "*",
     "ckeditor/ckeditor": "dev-full/stable"
   }
 }
