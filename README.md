@@ -1,2 +1,2 @@
 # yii2-ckeditor
-Yii2 CKEditor widget with bower asset
+CKEditor Yii2 widget working via official ckeditor composer package and using custom presets.
