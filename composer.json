@@ -23,7 +23,6 @@
       "mranger\\ckeditor\\": ""
     }
   },
-  "minimum-stability": "stable",
   "require": {
     "ckeditor/ckeditor": "dev-full/stable"
   }
