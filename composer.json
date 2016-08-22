@@ -23,7 +23,21 @@
       "mranger\\ckeditor\\": ""
     }
   },
+  "repositories": {
+    "ckeditor": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor",
+        "version": "4.5.10",
+        "source": {
+          "url": "https://github.com/ckeditor/ckeditor-releases.git",
+          "type": "git",
+          "reference": "full/stable"
+        }
+      }
+    }
+  },
   "require": {
-    "bower-asset/ckeditor#full": "4.*"
+    "ckeditor": "4.*"
   }
 }
