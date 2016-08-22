@@ -22,8 +22,5 @@
     "psr-4": {
       "mranger\\ckeditor\\": ""
     }
-  },
-  "require": {
-    "bower-asset/ckeditor": "dev-full/4.5.x"
   }
 }
