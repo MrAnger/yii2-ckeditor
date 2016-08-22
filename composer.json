@@ -23,21 +23,11 @@
       "mranger\\ckeditor\\": ""
     }
   },
-  "repositories": {
-    "ckeditor": {
-      "type": "package",
-      "package": {
-        "name": "ckeditor",
-        "version": "4.5.10",
-        "source": {
-          "url": "https://github.com/ckeditor/ckeditor-releases.git",
-          "type": "git",
-          "reference": "full/stable"
-        }
-      }
-    }
-  },
+  "minimum-stability": "dev",
   "require": {
-    "ckeditor": "4.*"
+    "yiisoft/yii2": "^2.0.0"
+  },
+  "require-dev": {
+    "ckeditor/ckeditor": "dev-full/stable"
   }
 }
