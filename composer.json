@@ -23,11 +23,7 @@
       "mranger\\ckeditor\\": ""
     }
   },
-  "minimum-stability": "dev",
   "require": {
-    "yiisoft/yii2": "^2.0.0"
-  },
-  "require-dev": {
-    "ckeditor/ckeditor": "dev-full/stable"
+    "bower-asset/ckeditor": "dev-full/stable"
   }
 }
