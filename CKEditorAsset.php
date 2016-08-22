@@ -9,7 +9,7 @@ use yii\web\View;
  * @author MrAnger
  */
 class CKEditorAsset extends AssetBundle {
-	public $sourcePath = "@vendor/ckeditor/ckeditor";
+	public $sourcePath = "@bower/ckeditor#full";
 
 	public $js = [
 		'ckeditor.js',

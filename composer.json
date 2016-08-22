@@ -24,6 +24,6 @@
     }
   },
   "require": {
-    "ckeditor/ckeditor": "dev-full/stable"
+    "bower-asset/ckeditor#full": "4.*"
   }
 }
