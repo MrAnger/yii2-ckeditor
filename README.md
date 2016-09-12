@@ -64,3 +64,30 @@ echo $form->field($model, 'content')->widget(CKEditor::className(), [
     'presetDirPath' => '@app/presets', //стандартный путь "@app/ckeditor-presets" можно не указывать
 ]);
 ```
+
+Что бы дать возможность загрузки файлов через редактор, необходимо сначала подключить необходимый экшен для загрузки файлов. Контролер может быть абсолютно любой.
+```php
+public function actions() {
+		return [
+			'ckeditor-file-upload' => [
+				'class' => 'mranger\ckeditor\actions\FileUploadAction',
+			],
+		];
+	}
+```
+После этого в настройках(пресете) указать url по которому должны производиться запросы для загрузки файлов.
+```php
+[
+ 'filebrowserUploadUrl' => Url::to(['your-controller/ckeditor-file-upload'], true),
+]
+```
+
+По умолчанию разрешена загрузка только файлов с расширениями: "png, jpg, jpeg, bmp, gif, ico, swf", файлы загружаются по пути: '@webroot/upload'.
+Если же необходимо изменить данные параметры, то в массиве params приложения можно определить свои параметры, а именно:
+```php
+[
+ 'CKEditorFileUploadAllowedExtensions' => 'gif, png, jpg', // разрешенные расширения файлов
+ 'CKEditorFileUploadPath' => '@webroot/ckeditor',          // путь для сохранения файлов
+ 'CKEditorFileUploadedUrl' => 'http://mysite.ru/ckeditor', // ссылка, по которой будут доступны сохраненые файлы
+]
+```
