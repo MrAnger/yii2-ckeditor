@@ -17,12 +17,6 @@ php composer.phar require --prefer-dist mranger/yii2-ckeditor "*"
  Я обычно прописываю зависимость от полного пакета последней версии.
  
  ```
- php composer.phar require --prefer-dist ckeditor/ckeditor "dev-full/stable"
- ```
- 
- или
- 
- ```
  "ckeditor/ckeditor": "dev-full/stable"
  ```
  
