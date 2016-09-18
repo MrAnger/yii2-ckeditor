@@ -12,6 +12,8 @@ trait CKEditorTrait {
 
 	public $clientOptions = [];
 
+	public $externalPlugins = [];
+
 	protected function initOptions() {
 		$options = [];
 
@@ -24,6 +26,10 @@ trait CKEditorTrait {
 				throw new \Exception("Preset file not found: $preset");
 			}
 		}
+
+		$this->externalPlugins = ArrayHelper::getValue($options, 'externalPlugins', []);
+
+		unset($options['externalPlugins']);
 
 		$this->clientOptions = ArrayHelper::merge($options, $this->clientOptions);
 	}

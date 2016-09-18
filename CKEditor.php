@@ -2,6 +2,7 @@
 
 namespace mranger\ckeditor;
 
+use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
@@ -52,6 +53,18 @@ class CKEditor extends InputWidget {
 
 		if (isset($this->clientOptions['filebrowserUploadUrl'])) {
 			$js[] = "mranger.ckeditorWidget.registerCsrfImageUploadHandler();";
+		}
+
+		if (!empty($this->externalPlugins)) {
+			$baseUrl = Yii::$app->urlManager->baseUrl;
+
+			foreach ($this->externalPlugins as $item) {
+				$pluginName = $item['name'];
+				$pluginUrl = $item['url'];
+				$pluginFileName = $item['fileName'];
+
+				$js[] = "CKEDITOR.plugins.addExternal('$pluginName', '$baseUrl$pluginUrl', '$pluginFileName')";
+			}
 		}
 
 		$view->registerJs(implode("\n", $js));
