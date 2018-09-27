@@ -63,7 +63,7 @@ class CKEditor extends InputWidget {
 				$pluginUrl = $item['url'];
 				$pluginFileName = $item['fileName'];
 
-				$js[] = "CKEDITOR.plugins.addExternal('$pluginName', '$baseUrl$pluginUrl', '$pluginFileName')";
+				$js[] = "CKEDITOR.plugins.addExternal('$pluginName', '$baseUrl$pluginUrl', '$pluginFileName');";
 			}
 		}
 
