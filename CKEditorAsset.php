@@ -17,6 +17,6 @@ class CKEditorAsset extends AssetBundle {
 	];
 
 	public $depends = [
-		'\yii\web\JqueryAsset',
+		'yii\web\JqueryAsset',
 	];
 }
